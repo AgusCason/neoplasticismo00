@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono/icono.png">
+    <title>Neoplasticismo   </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="grid">
+            <div class="cl4">
+                <p></p>
+            </div>
+            <div class="cl4">
+                <p></p>
+            </div>
+            <div class="cl2">
+                <p></p>
+            </div>
+            <div class="cl4"> 
+                <p></p>
+            </div>
+            <div class="cl4">
+                <p></p>
+            </div>
+            <div class="cl5">
+                <a></a><img class="img" src="" alt="">
+            </div>
+            <div class="cl1 click"> 
+                <a href=""><img  class="img" src="img/redes/facebook.png" alt=""></a>
+            </div>
+            <div class="cl2 click">
+                <a href=""><img class="img" src="img/redes/instagram.png" alt=""></a>
+            </div>
+            <div class="cl3 click">
+                <a href=""><img class="img" src="img/redes/whatsapp.png" alt=""></a>
+            </div>
+         </div>
+         <div class="grid2">
+            <div class="cl4">
+                <p></p>
+            </div>
+            <div class="cl1">
+                <p></p>
+            </div>
+            <div class="cl5">
+                <p></p>
+            </div>
+            <div class="cl3"> 
+                <p></p>
+            </div>
+            <div class="cl4">
+                <p></p>
+            </div>
+            <div class="cl4">
+                
+            </div>
+            <div class="cl4"> 
+                <img src="" alt="">
+            </div>
+            <div class="cl6">
+                <img src="" alt="">
+            </div>
+            <div class="cl3">
+                <img src="" alt="">
+            </div>
+            <div class="cl6">
+                <img src="" alt="">
+            </div>
+         </div>
+         <div class="grid3">
+            <div class="cl3">
+                <p></p>
+            </div>
+            <div class="cl4">
+                <p></p>
+            </div>
+            <div class="cl2 click titulo">
+                <a href="">NEOPLASTICISMO</a>
+            </div>
+            <div class="cl4"> 
+                <p></p>
+            </div>
+            <div class="cl1">
+                <p></p>
+            </div>
+         </div>
+    </header>
+ 
+
+</body>
+</html >
