@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <header class=" header container-fluid bg1">
+<header class=" header container-fluid bg1">
         <div class="container logo text-white p-1">
             <div class="row">
                 <div class="col-9 ">
@@ -109,68 +109,82 @@
             </div>
         </div>
     </header>
-    <section>
-        <div class="contenedorartista_1">
-            <div class="contenedorartista_izq">
-                <img src="img/autores/mondrian.jpg" alt="Piet_Mondrian">
-            </div>
-            <div class="contenedorartista_der">
-                <h4> Piet Mondrian</h4>
-                <p>Países Bajos, 1872–1944</p>  
-                <br>
-                <br>
-                <div class="textomondrian">
-                        <p> <b>Piet Mondrian</b>, el «pintor de los cuadraditos» fue un artista holandés que creó su obra en torno a la revista De Stijl, principal órgano de difusión <b>neoplasticista</b>.
-                            Para tipos como <b>Mondrian</b>, el arte debía ser representado a través de <b>líneas rectas</b> y <b>colores puros</b>. Cada uno tiene su opinión.</p> <br>
-                        <p> En caso de <b>Mondrian</b>, esto se debía a que lo <b>rectilíneo</b> y lo <b>cromáticamente puro</b> era un símbolo de la expresión del orden cósmico.
-                            Esto está vinculado a las teorías teosóficas que estaban de moda en la Europa de la belle epoque y que a la larga no es más que un intento de <b>abstracción</b> diferente al de <b>Kandinsky</b>. Mucho más ordenado, más matemático… y más frío.</p> <br>
-                            
-                        <p> Se formó como maestro de dibujo de educación obligatoria y a finales de siglo en Amsterdam se empezó a relacionar con los innovadores grupos artísticos del momento. Ahí pinta sus primeras obras, a años luz de lo que vendría después: paisajes serenos, grises, tierras, tonos oscuros… </p><br>
-                            
-                        <p> Pero en 1912 se traslada a París, donde conoció a gente como <b>Leger</b> o <b>Braque</b> que le descubren el nuevo y loco arte del siglo XX. Al principio se hizo <b>cubista</b> como ellos, pero poco a poco se fue interesando más por la abstracción.</p> <br>
+	<section class="">
 
-                        <p>La Gran Guerra llegó y el artista regresó a los Países Bajos, donde conoció a los que serían sus compañeros de movimiento, <b>Bart van der Leck</b> y <b>Theo van Doesburg</b>. Con ellos y otros más (arquitectos, diseñadores…) funda la <b>revista De Stijl</b>.</p> <br>
+    <article style="">
+      <div class="resultados_buscar_titulo">
+        <div class="resultados_buscar_titulo_espacio">
+          <p>.</p>
+        </div>
+        <div class="resultados_buscar_titulo_texto">
+          <h4> Resultados de busqueda</h4>
+        </div>
+        <div class="resultados_buscar_titulo_espacio1">
+          <p>.</p>
+        </div>
+      </div>
+      <div class="resultados_buscar_subtitulo">
+        <div class="resultados_buscar_subtitulo_espacio1">
+         <?php
+	         include('conexion.php');
+       	   $buscar = $_POST['buscar'];
+	         echo "Su consulta: <em>".$buscar."</em><br>";
+     	     $consulta = mysqli_query($conexion, "SELECT * FROM artistas WHERE nombre LIKE '%$buscar%' OR apellido LIKE '%$buscar%' ");
+          ?>          
+        </div>
+        <div class="resultados_buscar_subtitulo_espacio2">
+	        <p>Cantidad de Resultados: 
+	        <?php
+		       $nros=mysqli_num_rows($consulta);
+		       echo $nros;
+	        ?>
+	        </p>
+	        <?php
+		       while($resultados=mysqli_fetch_array($consulta)) {
+	        ?>          
+        </div>
+      </div>
+      <div class="resultados_buscar_resultado">
+        <div class="resultados_buscar_resultado_img cl2">
+             <img class="" src="<?php echo $resultados['foto']; ?>" alt="">         
+        </div>
+        <div class="resultados_buscar_resultado_texto">
+           <h4>
+            <?php
+               echo $resultados['nombre'] . " ";
+               echo $resultados['apellido'];
+            ?>
+            </h4>
+            <p class="card-text">
+            <?php	
+			         echo $resultados['bio'];
+	          ?>
+            </p>
+        </div>
+      </div>
+      <?php
+		   }
 
-                        <p>Con ella este grupo de artistas querían <b>representar las verdades absolutas del universo</b>. A partir de ese mismo momento, Mondrian se expresaría sólo a través de <b>planos de colores primarios y líneas rectas</b>.
-                            Al final <b>Van Doesburg</b> acabaría usando diagonales, aburrido de tanta línea monótona, y un ofendido <b>Mondrian</b> se separaría definitivamente del grupo por semejante sacrilegio.</p>  <br>
-                            
-                        <p>Tras esto viajaría, exportando su visión artística: Londres, Nueva York… Ahí perdería la rigidez anterior y ganaría ritmo. Quizás fue el jazz, quizás lo cosmopolita de la Gran Manzana… Quien sabe.</p>
-                </div>
-                <div class="pinturas">
-                    <h4>OBRAS FAMOSAS</h4>
-                    <div class="pinturasautor">
-                        <div class="pinturasautor1">
-                            <img src="img/obras/Mondrian/01.jpg" alt="">
-                        </div>
-                        <div class="pinturasautor2">
-                            <img src="img/obras/Mondrian/02.jpg" alt="">
-                        </div>
-                        <div class="pinturasautor3">
-                            <img src="img/obras/Mondrian/03.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+		    mysqli_free_result($consulta);
+		    mysqli_close($conexion);
+
+  	   ?>
+    </article>
+</section>
+<footer class="container-fluid cl3 footer">
+    <div class="container text-dark p-3 text-center">
+        <div class="row justify-content-center">
+            <div class="cl3">
+                <span>
+                    &copy; 2022 | Terminos y Condiciones | Agustín Casón | UP <br> 
+                </span>
             </div>
         </div>
+    </div>
+</footer>
 
-    </section>
-
-    <footer class="container-fluid cl2 footer3">
-        <div class="container text-dark p-3 text-center">
-            <div class="row justify-content-center">
-                <div class="cl2">
-                    <span>
-                        &copy; 2022 | Terminos y Condiciones | Agustín Casón | UP <br> 
-                    </span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-    <!-- Bootstrap JavaScript -->
+<!-- Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>

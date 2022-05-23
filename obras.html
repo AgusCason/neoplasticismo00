@@ -21,32 +21,35 @@
                     <!-- Navbar Bootstrap -->
                     <nav class="navbar navbar-dark cl5 fixed-top">
                         <div class="container-fluid">
-                            <div class="gridobras1">
-                                <div class="cl4 recuadro">
+                            <div class="recuadrosnav">
+                                <div class="recuadro_1 cl4">
                                     <a class="navbar-brand" href="index.html"><img src="img/icono/icono.png" alt="Neoplasticismo" class="logo"></a>
                                 </div>
-                                <div class="cl2 titulo">
+                                <div class="recuadro_2 cl2">
                                     <a href="index.html"><h2>NEOPLASTICISMO</h2></a>
                                 </div>
-                                <div class="cl4">
-                                    <p></p>
+                                <div class="recuadro_3 cl4">
+                                    <p>.</p>
                                 </div>
-                                <div class="cl4"> 
-                                    <p></p>
+                                <div class="recuadro_3 cl4">
+                                    <p>.</p>
                                 </div>
-                                <div class="cl1">
-                                    <p></p>
+                                <div class="recuadro_4 cl1">
+                                    <p>.</p>
                                 </div>
-                                <div class="cl5">
-                                    
+                                <div class="recuadro_5 cl5">
+                                    <p>.</p>
                                 </div>
-                                <div class="cl4">
-                                    <p></p>
-                                </div>                               
-                             </div>  
-                          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
+                                <div class="recuadro_6 cl4">
+                                    <p>.</p>
+                                </div>
+                                <div class="hamburguesa">
+                                    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                        <span class="navbar-toggler-icon"></span>
+                                      </button>
+                                </div>
+                            </div>
+                            
                           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header bg-dark">
                               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
@@ -75,25 +78,28 @@
                                   <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
                                     <li><a class="dropdown-item" href="artistas.html">Todos los Artistas</a></li>
                                     <li><a class="dropdown-item" href="mondrian.html">Piet Mondrian</a></li>
-                                    <li><a class="dropdown-item" href="#">Bart Van der Leck</a></li>
-                                    <li><a class="dropdown-item" href="#">Theo Van Doesburg</a></li>
+                                    <li><a class="dropdown-item" href="bart.html">Bart Van der Leck</a></li>
+                                    <li><a class="dropdown-item" href="doesburg.html">Theo Van Doesburg</a></li>
+                                    <li><a class="dropdown-item" href="jacobus.html">Jacobus Johannes Pieter Oud</a></li>
+                                    <li><a class="dropdown-item" href="rietveld.html">Gerrit Rietveld</a></li>
+                                    <li><a class="dropdown-item" href="huszar.html">Vilmos Huzsár</a></li>
                                   </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="historia.html">Historia</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Filosofía</a>
+                                    <a class="nav-link" href="filosofia.html">Filosofía</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contacto</a>
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
                                 </li>
                               </ul>
-                              <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar...">
-                                <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                  </svg></button>
+                              <form action="resultados_buscar.php" method="post">
+                                <label>
+                                <input type="search" name="buscar" placeholder="Buscar..." />
+                                <input type="submit" value="Enviar">
+                                </label>
                               </form>
                             </div>
                           </div>
@@ -190,9 +196,9 @@
                  <div class="obra">
                     <a href="#">
                          <figure>
-                             <img src="img/obras/05.jpg">
+                             <img src="img/obras/01.png">
                              <div class="capa">
-                                 <h3>Composición II</h3>
+                                 <h3>Composición I</h3>
                                  <p>ver más</p>
                              </div>
                          </figure>
@@ -201,9 +207,9 @@
                  <div class="obra">
                     <a href="#">
                          <figure>
-                             <img src="img/obras/05.jpg">
+                             <img src="img/obras/02.png">
                              <div class="capa">
-                                 <h3>Composición II</h3>
+                                 <h3>De Stil I</h3>
                                  <p>ver más</p>
                              </div>
                          </figure>
@@ -214,9 +220,9 @@
                 <div class="obra espaciado">
                     <a href="#">
                          <figure>
-                             <img src="img/obras/05.jpg">
+                             <img src="img/obras/03.png">
                              <div class="capa">
-                                 <h3>Composición II</h3>
+                                 <h3>Broadway Boogie </h3>
                                  <p>ver más</p>
                              </div>
                          </figure>
@@ -225,9 +231,9 @@
                  <div class="obra espaciado">
                     <a href="#">
                          <figure>
-                             <img src="img/obras/05.jpg">
+                             <img src="img/obras/Bart/01.jpg">
                              <div class="capa">
-                                 <h3>Composición II</h3>
+                                 <h3>Composición VII</h3>
                                  <p>ver más</p>
                              </div>
                          </figure>
@@ -236,9 +242,9 @@
                  <div class="obra espaciado">
                     <a href="#">
                          <figure>
-                             <img src="img/obras/05.jpg">
+                             <img src="img/obras/Bart/02.jpg">
                              <div class="capa">
-                                 <h3>Composición II</h3>
+                                 <h3>Leñadores</h3>
                                  <p>ver más</p>
                              </div>
                          </figure>
@@ -249,9 +255,9 @@
                 <div class="obra espaciado">
                     <a href="#">
                          <figure>
-                             <img src="img/obras/05.jpg">
+                             <img src="img/obras/Doesburg/1.jpg">
                              <div class="capa">
-                                 <h3>Composición II</h3>
+                                 <h3>Naturaleza muerta</h3>
                                  <p>ver más</p>
                              </div>
                          </figure>
@@ -260,9 +266,9 @@
                  <div class="obra espaciado">
                     <a href="#">
                          <figure>
-                             <img src="img/obras/05.jpg">
+                             <img src="img/obras/Doesburg/2.jpg">
                              <div class="capa">
-                                 <h3>Composición II</h3>
+                                 <h3>Composición XX</h3>
                                  <p>ver más</p>
                              </div>
                          </figure>
@@ -271,9 +277,9 @@
                  <div class="obra espaciado">
                     <a href="#">
                          <figure>
-                             <img src="img/obras/05.jpg">
+                             <img src="img/obras/Doesburg/3.jpg">
                              <div class="capa">
-                                 <h3>Composición II</h3>
+                                 <h3>Construcción espaciotemporal II</h3>
                                  <p>ver más</p>
                              </div>
                          </figure>

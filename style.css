@@ -10,11 +10,20 @@ body{max-width: 100%;margin: 0;font-family: 'Roboto Condensed', sans-serif;}
 
 /* cabecera */
 .header{background:#000000 ;margin: none;}
-.logo{width: 100%;}
-.gridobras1 {margin-left: -1.5%;margin-bottom: -1%;display: grid;grid-template-columns: 8% 35.5% 5% 5% 27% 5% 32% ;grid-template-rows: auto 15px;gap:1%;}
-.gridobras1 div{ padding: 1em; }
-.titulo h2{font-size:170%;margin-top: 1.5%;color: #000000;margin-bottom: -1%;text-align: center;font-family: 'Graduate', cursive;}
-.recuadro{margin: none;margin-bottom: -1%;}
+.recuadrosnav{width: 100%;display: flex;margin-left: -1%;margin-top: -0.8%;margin-bottom: -0.5%;}
+.recuadro_1{width: 8%;flex-flow: wrap;border: 10px solid #000000;}
+.recuadro_1 img{width: 60%;margin: 18%;}
+.recuadro_2{width: 28%;border: 10px solid #000000;border-left: none;}
+.recuadro_2 a{text-align: center;}
+.recuadro_2 h2{margin-top: 6.5%;color: #000000;font-family: 'Graduate', cursive;font-size:175%;}
+.recuadro_3{width: 5%;border: 10px solid #000000;border-left: none;}
+.recuadro_4{width: 24%;border: 10px solid #000000;border-left: none;}
+.recuadro_4 p{color: #f10d0d;}
+.recuadro_5{width: 5%;border: 10px solid #000000;border-left: none;}
+.recuadro_5 p{color: #000000;}
+.recuadro_6{width: 20%;border: 10px solid #000000;border-left: none;}
+.hamburguesa{margin-top: 2.5%;margin-left: 4%;}
+
 /* ------- */
 
 /* Footer  */
@@ -43,7 +52,7 @@ body{max-width: 100%;margin: 0;font-family: 'Roboto Condensed', sans-serif;}
 .cuadro_2_b_4{width: 45%;border: 10px solid #000000;color: #ffffff;border-left: none;border-top: none;}
 .home_2{width: 100%;display: flex;}
 .cuadro_3{width: 62%;flex-flow:wrap;border: 10px solid #000000;border-left: none;border-top: none;}
-.cuadro_3 h4{text-align: center;font-family: 'Graduate', cursive;margin-top: 4%;margin-bottom: 4%;font-size: 250%;color: #000000;}
+.cuadro_3 h4{text-align: center;font-family: 'Graduate', cursive;margin-top: 4%;margin-bottom: 4%;font-size: 280%;color: #000000;}
 .cuadro_4{width: 7%;}
 .cuadro_5{width: 10%;border: 10px solid #000000;border-left: none;border-top: none;}
 .cuadro_5 p{color: #ffffff;}
@@ -186,7 +195,7 @@ body{max-width: 100%;margin: 0;font-family: 'Roboto Condensed', sans-serif;}
 
 /* ARTISTA EN PARTICULAR */
 
-/* Piet Mondrian*/
+
 .contenedorartista_1{width: 100%;display: flex;margin-top: 6%;}
 .contenedorartista_izq{flex-flow: wrap;width: 45%;}
 .contenedorartista_izq img{width: 45%;position: fixed;border: 10px solid #000000;}
@@ -197,10 +206,18 @@ body{max-width: 100%;margin: 0;font-family: 'Roboto Condensed', sans-serif;}
 .textomondrian p{font-family:sans-serif;margin-left: -5%;margin-right: 5%;}
 .pinturas{width: 100%;}
 .pinturas h4{font-family: 'Graduate', cursive;font-size: 210%;text-decoration: none;color: #000;}
-/* ---- */
+.pinturasautor{width: 100%;display: flex;}
+.pinturasautor1{flex-flow: wrap;width: 30%;padding: 1.5%;}
+.pinturasautor1 img{width: 100%;padding: 1.5%;}
+.pinturasautor2{width: 30%;padding: 1.5%;}
+.pinturasautor2 img{width: 100%;padding: 1.5%;}
+.pinturasautor3{width: 30%;padding: 1.5%;}
+.pinturasautor3 img{width: 100%;padding: 1.5%;}
+
+
 
 /* ----  */
-.suscribite
+
 /* HISTORIA  */
 .contenedorhistoria{width: 100%;}
 .historiatitulo{width: 100%;border: 10px solid #000000;margin-top: 6%;}
@@ -226,12 +243,56 @@ body{max-width: 100%;margin: 0;font-family: 'Roboto Condensed', sans-serif;}
 /* ----  */
 
 /* FILOSOFÍA  */
+.contenedorfilosofia{width: 100%;margin-top: 6%;}
+.filosofiaespacios{width: 100%;display: flex;}
+.filosofiaespacios_1{width: 5%;border: 10px solid #000000;color: #ffffff;border-top: none;}
+.filosofiaespacios_2{width: 80%;border: 10px solid #000000;border-left: none;border-top: none;}
+.filosofiaespacios_2 h4{font-family: 'Graduate', cursive;font-size: 210%;text-decoration: none;color: #000;text-align: center;padding: 2%;text-align: center;margin-top: 1%;}
+.filosofiaespacios_3{width: 5%;border: 10px solid #000000;color: #ffffff;border-top: none;border-left: none;}
+.filosofiatexto{width: 100%;display: flex;border: 10px solid #000000;border-top: none;}
+.filosofiaespacios_4{width: 10%;flex-flow: wrap;color: #ffffff;}
+.filosofiatexto_1{width: 60%;border: 10px solid #000000;border-top: none;border-left: none;}
+.filosofiatexto_1 p{font-family: 'Graduate', cursive;font-size: 150%;text-decoration: none;color: #000;text-align: center;padding: 2%;text-align: center;}
+
 
 
 /* ---------  */
 
+/* CONTACTO  */
+
+.contenedorcontacto_titulo{width: 100%;margin-top: 6.5%;border: 10px solid #000000;border-top: none;}
+.contenedorcontacto_titulo h4{font-family: 'Graduate', cursive;font-size: 210%;text-decoration: none;color: #000;text-align: center;padding: 2%;}
+.cuerpocontacto{width: 100%;display: flex;}
+.cuerpocontacto_espacio{width: 15%;flex-flow: wrap;border: 10px solid #000000;border-top: none;}
+.cuerpocontacto_form{width: 70%;border-bottom: 10px solid #000000;padding: 2%;}
+.cuerpocontacto_form h4{font-family: 'Graduate', cursive;font-size: 150%;text-decoration: none;color: #000;text-align: center;padding: 2%;}
+.formborde{border: 4px solid #000000;border-radius: none;}
+
+/* ---------  */
+
+/* RESULTADOS BUSCADOR  */
+
+.resultados_buscar_titulo{width: 100%;margin-top: 6%;display: flex;}
+.resultados_buscar_titulo_espacio{width: 20%;flex-flow: wrap;border: 10px solid #000000;border-top: none;}
+.resultados_buscar_titulo_texto{width: 60%;flex-flow: wrap;border: 10px solid #000000;border-top: none;border-left: none;}
+.resultados_buscar_titulo_texto h4{font-family: 'Graduate', cursive;font-size: 210%;text-decoration: none;color: #000;text-align: center;padding: 2%;text-align: center;margin-top: 2%;}
+.resultados_buscar_titulo_espacio1{width: 20%;border: 10px solid #000000;border-top: none;border-left: none;}
+.resultados_buscar_subtitulo{width: 100%;display: flex;border: 10px solid #000000;border-top: none;}
+.resultados_buscar_subtitulo_espacio1{width: 50%;flex-flow: wrap;text-align: center;margin-top: 1%;}
+.resultados_buscar_subtitulo_espacio2{width: 50%;text-align: center;margin-top: 1%;}
+.resultados_buscar_resultado{width: 100%;display: flex;border: 10px solid #000000;border-top: none;}
+.resultados_buscar_resultado_img{width: 40%;flex-flow: wrap;}
+.resultados_buscar_resultado_img img{width: 100%;border-bottom: 10px solid #000000;}
+.resultados_buscar_resultado_texto{width: 60%;flex-flow: wrap;border-left: 10px solid #000000;}
+.resultados_buscar_resultado_texto h4{font-family: 'Graduate', cursive;font-size: 210%;text-decoration: none;color: #000;padding: 2%;margin-left: 4%;}
+.resultados_buscar_resultado_texto p{font-family:sans-serif;margin-left: 2%;}
 
 
+.resultados_buscar{margin-top: 10%;width: 100%;}
+.resultados_buscar_card{width: 70%;;}
+.resultados_buscar_img{width: 50%;}
+
+/* ---------  */
 
 /* dispositivo mediano */
 @media(min-width: 580px) and (max-width: 989px){}
